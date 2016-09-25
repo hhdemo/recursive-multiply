@@ -16,7 +16,7 @@ public class RecursiveMultiply {
         boolean testsPassed = true;
         for (int i = 1; i < 1000; i++) {
             for (int j = i; j < 1000; j++) {
-                if (recursiveMultiply(Math.max(i,j), Math.min(i,j)) != i * j) {
+                if (recursiveMultiply(i, j) != i * j) {
                     testsPassed = false;
                 }
             }
